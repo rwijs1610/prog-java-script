@@ -1,0 +1,38 @@
+const canvas = document.getElementById("canvas");
+const g = canvas.getContext("2d");
+g.beginPath();
+g.moveTo(300, 50);
+g.lineTo(450, 350);
+g.lineTo(150, 350);
+g.closePath();
+g.stroke();
+
+g.beginPath();
+g.moveTo(700, 50);
+g.lineTo(900, 150);
+g.lineTo(830, 350);
+g.lineTo(580, 350);
+g.lineTo(500, 150);
+g.closePath();
+g.stroke();
+
+// g.moveTo(0, 0);
+// g.lineTo(200, 200);
+// g.stroke();
+// g.rect(300,200,200,200);
+// g.lineWidth = 10;
+// g.fillStyle = "green";
+// g.stroke();
+// g.fill();
+// g.moveTo(300, 200);
+// g.lineTo(300, 400);
+// g.stroke();
+// g.moveTo(300, 400);
+// g.lineTo(500, 400);
+// g.stroke();
+// g.moveTo(500, 400);
+// g.lineTo(500, 200);
+// g.stroke();
+// g.moveTo(500, 200);
+// g.lineTo(300, 200);
+// g.stroke();

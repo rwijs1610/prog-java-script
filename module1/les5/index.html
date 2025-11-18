@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="str"></div>
+    <div id="dex"></div>
+    <div id="con"></div>
+    <div id="wis"></div>
+    <div id="int"></div>
+    <div id="cha"></div>
+</body>
+<script>
+    function RollDice() {
+        return Math.floor(Math.random() * 6) + 1;
+    }
+
+
+    function Rollstat() {
+        let dice1 = RollDice();
+        let dice2 = RollDice();
+        let dice3 = RollDice();
+        let dice4 = RollDice();
+        let lowest = Math.min(dice1, dice2, dice3, dice4);
+        let sum = dice1 + dice2 + dice3 + dice4 - lowest;
+        return sum;
+    }
+
+    let stat1 = Rollstat()
+    let strElement = document.getElementById("str");
+    strElement.textContent = "STR " + stat1;
+    let stat2 = Rollstat()
+    let dexElement = document.getElementById("dex");
+    dexElement.textContent = "DEX " + stat2;
+    let stat3 = Rollstat()
+    let conElement = document.getElementById("con");
+    conElement.textContent = "CON " + stat3;
+    let stat4 = Rollstat()
+    let wisElement = document.getElementById("wis");
+    wisElement.textContent = "WIS " + stat4;
+    let stat5 = Rollstat()
+    let intElement = document.getElementById("int");
+    intElement.textContent = "INT " + stat5;
+    let stat6 = Rollstat()
+    let chaElement = document.getElementById("cha");
+    chaElement.textContent = "CHA " + stat6;
+</script>
+
+</html>

@@ -1,2 +1,1 @@
-# prog-java-script
-leren progmeren java script
+# js-school-
